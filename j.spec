@@ -6,6 +6,7 @@ Release:	1
 Group:		Development/Tools
 License:	GPL
 Source0:	http://dl.sourceforge.net/armedbear-j/%{name}-%{version}.tar.gz
+# Source0-md5:	bd71e4df65c7cc1ec2bda4baa2e1ae27
 URL:		http://armedbear-j.sourceforge.net/
 Patch0:		%{name}-destdir.patch
 BuildRequires:	jdk
