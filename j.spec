@@ -27,7 +27,7 @@ j to edytor tekstu napisany ca³kowicie w Javie.
 chmod 755 configure
 chmod 755 mkinstalldirs
 %configure2_13 				\
-        --with-jdk=/usr/lib/java	\
+        --with-jdk=%{_libdir}/java	\
 	--enable-jpty
 %{__make}
 
