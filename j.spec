@@ -5,15 +5,18 @@ Version:	0.16.3
 Release:	1
 Group:		Development/Tools
 License:	GPL
-Source0:	http://cesnet.dl.sourceforge.net/armedbeer-j/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/armedbear-j/%{name}-%{version}.tar.gz
+URL:		http://armedbear-j.sourceforge.net/
 Patch0:		%{name}-destdir.patch
+BuildRequires:	jdk
+Requires:	jre
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-j editor
+J is a text editor written entirely in Java.
 
 %description -l pl
-Edytor j
+J to edytor tekstu napisany ca³kowicie w Javie.
 
 %prep
 %setup -q
@@ -39,5 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr (755,root,root) %{_bindir}/*
 %doc doc/*
-%{_datadir}/j/themes/*
+%dir %{_datadir}/j
+%{_datadir}/j/themes
 %{_datadir}/j/j.jar
