@@ -1,5 +1,5 @@
 Summary:	j editor
-Summary(pl):	Edytof j
+Summary(pl):	Edytor j
 Name:		j
 Version:	0.18.0
 Release:	1
