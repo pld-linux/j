@@ -1,12 +1,12 @@
 Summary:	j editor
 Summary(pl):	Edytor j
 Name:		j
-Version:	0.18.0
+Version:	0.19.0
 Release:	1
 Group:		Development/Tools
 License:	GPL
+# Source0-md5:	fe3c7f8466123713e33537a785305f4c
 Source0:	http://dl.sourceforge.net/armedbear-j/%{name}-%{version}.tar.gz
-# Source0-md5:	bd71e4df65c7cc1ec2bda4baa2e1ae27
 URL:		http://armedbear-j.sourceforge.net/
 Patch0:		%{name}-destdir.patch
 BuildRequires:	jdk
