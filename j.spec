@@ -5,7 +5,7 @@ Version:	0.18.0
 Release:	1
 Group:		Development/Tools
 License:	GPL
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/armedbear-j/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/armedbear-j/%{name}-%{version}.tar.gz
 URL:		http://armedbear-j.sourceforge.net/
 Patch0:		%{name}-destdir.patch
 BuildRequires:	jdk
