@@ -14,10 +14,10 @@ Requires:	jre
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-J is a text editor written entirely in Java.
+j is a text editor written entirely in Java.
 
 %description -l pl
-J to edytor tekstu napisany ca³kowicie w Javie.
+j to edytor tekstu napisany ca³kowicie w Javie.
 
 %prep
 %setup -q
