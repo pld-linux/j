@@ -1,0 +1,26 @@
+diff -Nur j-0.16.3.orig/Makefile.in j-0.16.3/Makefile.in
+--- j-0.16.3.orig/Makefile.in	Wed Aug 21 16:12:01 2002
++++ j-0.16.3/Makefile.in	Thu Aug 22 10:05:45 2002
+@@ -160,14 +160,14 @@
+ 	-rm -rf $(distdir)
+ 
+ install:
+-	./mkinstalldirs $(datadir)/j $(datadir)/j/themes $(datadir)/doc/j $(bindir)
+-	$(INSTALL_DATA) j.jar $(datadir)/j
+-	$(INSTALL_SCRIPT) j $(bindir)
+-	if [ -f src/jpty/$(JPTY) ]; then $(INSTALL_PROGRAM) src/jpty/$(JPTY) $(bindir); fi
+-	if [ -f j.bat ]; then $(INSTALL_SCRIPT) j.bat $(bindir); fi
+-	for i in themes/* ; do test -f $$i && $(INSTALL_DATA) $$i $(datadir)/j/themes ; done
+-	$(INSTALL_DATA) doc/*.html $(datadir)/doc/j
+-	$(INSTALL_DATA) doc/*.css $(datadir)/doc/j
++	./mkinstalldirs $(DESTDIR)/$(datadir)/j $(DESTDIR)/$(datadir)/j/themes $(DESTDIR)/$(datadir)/doc/j $(DESTDIR)/$(bindir)
++	$(INSTALL_DATA) j.jar $(DESTDIR)/$(datadir)/j
++	$(INSTALL_SCRIPT) j $(DESTDIR)/$(bindir)
++	if [ -f src/jpty/$(JPTY) ]; then $(INSTALL_PROGRAM) src/jpty/$(JPTY) $(DESTDIR)/$(bindir); fi
++	if [ -f j.bat ]; then $(INSTALL_SCRIPT) j.bat $(DESTDIR)/$(bindir); fi
++	for i in themes/* ; do test -f $$i && $(INSTALL_DATA) $$i $(DESTDIR)/$(datadir)/j/themes ; done
++	$(INSTALL_DATA) doc/*.html $(DESTDIR)/$(datadir)/doc/j
++	$(INSTALL_DATA) doc/*.css $(DESTDIR)/$(datadir)/doc/j
+ 
+ uninstall:
+ 	-rm -f $(datadir)/j/j.jar
