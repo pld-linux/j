@@ -1,7 +1,7 @@
 Summary:	j editor
 Summary(pl):	Edytof j
 Name:		j
-Version:	0.16.3
+Version:	0.18.0
 Release:	1
 Group:		Development/Tools
 License:	GPL
