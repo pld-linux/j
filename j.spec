@@ -1,5 +1,5 @@
 Summary:	j editor
-Summary(pl):	Edytor j
+Summary(pl.UTF-8):   Edytor j
 Name:		j
 Version:	0.19.0
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 j is a text editor written entirely in Java.
 
-%description -l pl
-j to edytor tekstu napisany ca≥kowicie w Javie.
+%description -l pl.UTF-8
+j to edytor tekstu napisany ca≈Çkowicie w Javie.
 
 %prep
 %setup -q
