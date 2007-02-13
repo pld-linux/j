@@ -1,5 +1,5 @@
 Summary:	j editor
-Summary(pl.UTF-8):   Edytor j
+Summary(pl.UTF-8):	Edytor j
 Name:		j
 Version:	0.19.0
 Release:	1
